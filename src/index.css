@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+:root {
+  --main-color-heading:#3577f1;
+  --subheading-color: #081921;
+}
+
+
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  
+}
+
+.blogs input {
+  float: right;
+}
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+  
+}
+.navbar-brand {
+  color: var(--main-color-heading) !important;
+  font-weight: 800;
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+.navbar a:hover {
+  color: var(--main-color-heading);
+}
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* blog previews / list */
+.blog-preview {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+}
+.blog-preview:hover {
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
+.blog-preview h2 {
+  font-size: 20px;
+  color: var(--main-color-heading);
+  margin-bottom: 8px;
+}
+.blog-preview a{
+  text-decoration: none;
+}
+.blog-preview p{
+  white-space: pre-line;
+  margin-bottom: 8px;
+}
+
+/* blog details page */
+.blog-details h2 {
+  font-size: 20px;
+  color: var(--main-color-heading);
+  margin-bottom: 10px;
+}
+.blog-details p {
+  word-wrap: break-word;
+
+}
+.blog-details div {
+  margin: 20px 0;
+  white-space: pre-line;
+}
+.blog-details button {
+  background: var(--main-color-heading);
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* create new blog form */
+.create {
+  max-width: 400px;
+  margin: 0 auto;
+}
+.create label {
+  text-align: left;
+  display: block;
+  margin: 10px 0;
+}
+.create h2 {
+  font-size: 20px;
+  color: var(--main-color-heading);
+  margin-bottom: 30px;
+}
+.create input, textarea {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+
+.create button {
+  background: var(--main-color-heading);
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+/* resume */
+hr{
+  width: 85%;
+  margin: 30px auto;
+}
+.resume h2 {
+  color: var(--main-color-heading);
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+.resume h2 span{
+  font-size: 0.8em;
+  font-weight: 300;
+  color: var(--subheading-color);
+}
+.about {
+  margin-bottom: 50px;
+}
+.about:last-child {
+  margin-bottom: 0;
+}
+.title2 {
+  color: var(--main-color-heading);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+p {
+  color: var(--subheading-color);
+  text-align: justify;
+  text-justify: inter-word;
+  font-weight: 300;
+}
+.about .box {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+.about .box .year_company {
+  min-width: 150px;
+}
+.about .box .year_company h5 {
+  text-transform: uppercase;
+  color: #848c90;
+  font-weight: 600;
+}
+.about .box .text h5 {
+  text-transform: uppercase;
+  color: var(--main-color-heading);
+  font-size: 16px;
+}
+.about .box .text ul li {
+  text-align: justify;
+  text-justify: inter-word;
+  font-weight: 300;
+}
+
+.about .box .text a {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--subheading-color);
+  font-weight: 300;
+}
+.education {
+  margin-bottom: 50px;
+}
+.education ul {
+  position: relative;
+}
+.education ul li {
+  list-style: none;
+  position: relative;
+  margin: 10px 0;
+  cursor: pointer;
+  text-align: justify;
+  text-justify: inter-word;
+  font-weight: 300;
+}
+
+
+.education h5:nth-child(2) {
+  color: var(--main-color-heading);
+  font-weight: 500;
+}
+.education h5 {
+  color: var(--subheading-color);
+  font-weight: 300;
+}
